@@ -3,23 +3,23 @@ import { Image } from "astro:assets";
 
 const navLinks = [
   {
-    name: "About us",
+    name: "O mnie",
     href: "#about",
   },
   {
-    name: "Services",
+    name: "Usługi",
     href: "#services",
   },
   {
-    name: "Use cases",
+    name: "Przypadłości",
     href: "#cases",
   },
   {
-    name: "Testimonials",
+    name: "Opinie",
     href: "#testimonials",
   },
   {
-    name: "Contact",
+    name: "Kontakt",
     href: "#contact",
   },
 ];
@@ -66,7 +66,7 @@ import brand from "../../assets/brand.svg";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Request a quote</button>
+        <button class="btn-secondary">Umów wizytę</button>
       </div>
     </div>
 
@@ -127,20 +127,3 @@ import brand from "../../assets/brand.svg";
     }
   });
 </script>
-
-<!-- 
-  Use to highlight the active link in the navigation bar
-  Gotta test in dev and prod bc sometimes it doesn't work
----
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); // remove the first "/"
----
-
-<nav>
-  <a class={currentPath === "" ? "active" : ""} href="/">Home</a>
-  <a class={currentPath === "portfolio" ? "active" : ""} href="/portfolio">Portfolio</a>
-  <a class={currentPath === "posts" ? "active" : ""} href="/posts">Article</a>
-  <a class={currentPath === "about" ? "active" : ""} href="/about">About Me</a>
-  <a class={currentPath === "contact" ? "active" : ""} href="/contact">Contact Me</a>
-</nav>
--->
