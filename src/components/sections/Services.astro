@@ -3,71 +3,71 @@ import SectionTitle from "../ui/SectionTitle.astro";
 import ServiceCard from "../ui/ServiceCard.astro";
 import Section from "./Section.astro";
 
-import c1 from "../../assets/pics/card-pic1.png";
-import c2 from "../../assets/pics/card-pic2.png";
-import c3 from "../../assets/pics/card-pic3.png";
-import c4 from "../../assets/pics/card-pic4.png";
-import c5 from "../../assets/pics/card-pic5.png";
-import c6 from "../../assets/pics/card-pic6.png";
+import c1 from "../../assets/pics/card-pic-1.png";
+import c2 from "../../assets/pics/card-pic-2.png";
+import c3 from "../../assets/pics/card-pic-3.png";
+import c4 from "../../assets/pics/card-pic-4.png";
+import c5 from "../../assets/pics/card-pic-5.png";
+import c6 from "../../assets/pics/card-pic-6.png";
 
 const cards = [
   {
     index: 1,
-    titleTop: "Search Engine",
-    titleBottom: "Optimization",
+    titleTop: "Ziołolecznictwo",
+    titleBottom: "",
+    actionBottom: "Mieszanki ziołowe wspierające leczenie.",
     img: c1,
     alt: "SEO",
-    link: "https://google.com",
   },
   {
     index: 2,
-    titleTop: "Pay-per-click",
-    titleBottom: "advertising",
+    titleTop: "Terapia manualna ",
+    titleBottom: "",
+    actionBottom: "Leczenie bólu za pomocą technik manualnych.",
     img: c2,
     alt: "SEO",
-    link: "https://google.com",
   },
   {
     index: 3,
-    titleTop: "Social Media",
-    titleBottom: "Marketing",
-    img: c3,
+    titleTop: "Masaże terapeutyczne",
+    titleBottom: "",
+    actionBottom: "Masaże regenerujące i relaksujące.",
+    img: c4,
     alt: "SEO",
-    link: "https://google.com",
   },
   {
     index: 1,
-    titleTop: "Email",
-    titleBottom: "Marketing",
-    img: c4,
+    titleTop: "Terapia dietetyczna",
+    titleBottom: "",
+    actionBottom: "Plany dietetyczne dopasowane do potrzeb pacjenta.",
+    img: c3,
     alt: "SEO",
-    link: "https://google.com",
   },
   {
     index: 2,
-    titleTop: "Content",
-    titleBottom: "Creation",
+    titleTop: "Irydologia ",
+    titleBottom: "",
+    actionBottom: "Analiza zdrowia na podstawie oka.",
     img: c5,
     alt: "SEO",
-    link: "https://google.com",
   },
   {
     index: 3,
-    titleTop: "Analytics and",
-    titleBottom: "Tracking",
+    titleTop: "Aromaterapia ",
+    titleBottom: "",
+    actionBottom: "Użycie olejków eterycznych do poprawy samopoczucia.",
     img: c6,
     alt: "SEO",
-    link: "https://google.com",
   },
 ];
 
 const description =
-  "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include";
+  "Pani Olga oferuje szeroki wachlarz usług, które wspierają zdrowie i dobre samopoczucie. Usługi te obejmują m.in:";
 ---
 
 <Section>
   <div class="mt-[140px] mb-5">
-    <SectionTitle sectionTitle="Services" description={description} />
+    <SectionTitle sectionTitle="Usługi" description={description} />
     <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
       {
         cards.map((card) => (
@@ -75,9 +75,9 @@ const description =
             index={card.index}
             titleTop={card.titleTop}
             titleBottom={card.titleBottom}
+            actionBottom={card.actionBottom}
             img={card.img}
             alt={card.alt}
-            link={card.link}
           />
         ))
       }
