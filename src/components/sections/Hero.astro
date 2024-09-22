@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
-import HeroIlust from "../../assets/pics/olga_koss_avatar.jpg";
+import DemisIlust from "../../assets/pics/Olga_Koss_Demis_Roussos.jpg";
 import Section from "./Section.astro";
 ---
 
 <Section id="home">
   <div
-    class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px]"
+    class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px] mb-5"
   >
     <div class="flex flex-col w-full lg:w-[66.5%]">
       <h2>
@@ -16,10 +16,9 @@ import Section from "./Section.astro";
     </div>
     <picture class="row-span-1 md:row-span-2">
       <Image
-        src={HeroIlust}
-        class="rounded-full border-solid border-dark border-4 w-80 h-80 m-auto"
-        alt="Hero Ilustration"
-        loading="eager"
+        src={DemisIlust}
+        class="rounded-full border-solid border-dark border-4 lg:w-96 lg:h-96 w-80 h-80 m-auto mt-5"
+        alt="Demis Roussos i pani Olga Koss"
       />
     </picture>
     <div class="w-full lg:w-[66.5%]">
@@ -27,10 +26,15 @@ import Section from "./Section.astro";
         Olga Koss od lat pomaga ludziom w najtrudniejszych sytuacjach, gdzie
         inni widzą małe szanse. Wielu zawdzięcza jej nie tylko zdrowie, ale i
         życie. Dzięki 24-letniemu doświadczeniu zdobytemu w Europie i Azji oraz
-        48 metodom leczenia, dokonuje prawdziwych cudów.
+        48 metodom leczenia, dokonuje prawdziwych cudów. Nawet sam słynny <strong
+          >Demis Roussos
+        </strong> odzyskał sprawność, stracił wagę. Teraz jest zadowolony i uśmiechnięty
+        - jak widać na zdjęciu.
       </p>
-      <button class="btn-primary w-full md:w-auto"
-        >Umów wizytę już teraz!</button
+      <a
+        title="Umów wizytę telefoniczną Olga Koss"
+        href="tel:+48886555984"
+        class="btn-primary w-full md:w-auto">Zadzwoń i umów wizytę!</a
       >
     </div>
   </div>
