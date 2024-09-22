@@ -1,14 +1,40 @@
 ---
 const slides = [
-  { index: 1, name: "John Johnson", description: "Marketing dierector at XYZ" },
-  { index: 2, name: "Ana Banana", description: "Marketing dierector at XYZ" },
+  {
+    index: 1,
+    name: "Mężczyzna",
+    description: "Rzeszów",
+    review:
+      "Po operacji nie wiedziałem na lewe oko wcale, a na lewe nie całe pół. Po wizycie u P. Olgi mam lepszą siatkówkę oka prawego. na lewe oko zaczynam widzieć i odróżniać kolory",
+  },
+  {
+    index: 2,
+    name: "Kobieta",
+    description: "Rzeszów",
+    review:
+      "Z łuszczycą zmagam się od dzieciństwa. Leczenie szpitalne, sanatoryjne wracało z nasilonymi objawami. Po wizycie u p. Olgi Koss mam efekt 'czystej ' skóry.Nie mam śladu po łuszczycy: na plecach,brzuchu,ramionach i udach",
+  },
   {
     index: 3,
-    name: "Camilo Corintio",
-    description: "Marketing dierector at XYZ",
+    name: "Kobieta",
+    description: "Tarnów",
+    review:
+      "Od urodzenia pęcherz moczowy, lekkie upośledzenie.. Dziękuję p. Oldze Koss. Migrenowy ból głowy, kręgosłupa, cierpnięcie nóg.... Dziękuję...  ",
   },
-  { index: 4, name: "Karla Kaz", description: "Marketing dierector at XYZ" },
-  { index: 5, name: "Johanna Jana", description: "Marketing dierector at XYZ" },
+  {
+    index: 4,
+    name: "Kobieta",
+    description: "Kraków",
+    review:
+      "Wysokie ciśnienie krwi. Oparzenie nóg. Dziękuje za lek, który robi P. Olga Koss ",
+  },
+  {
+    index: 5,
+    name: "Kobieta",
+    description: "Rzeszów",
+    review:
+      "Polipy odrosły po zabiegu chirurgicznym.. Po 15 min.u p. Olgi Koss w 30% odzyskałam oddech nosem. Po każdych kolejnych 5 min. odzyskiwałam coraz więcej oddechu...",
+  },
 ];
 ---
 
@@ -32,13 +58,7 @@ const slides = [
           aria-label={`${slide.index} / ${slides.length}`}
         >
           <div class="flex flex-col justify-center items-center py-[48px] px-6 sm:px-[52px]">
-            <p class="bubble">
-              "We have been working with Positivus for the past year and have
-              seen a significant increase in website traffic and leads as a
-              result of their efforts. The team is professional, responsive, and
-              truly cares about the success of our business. We highly recommend
-              Positivus to any company looking to grow their online presence."
-            </p>
+            <p class="bubble">{slide.review}</p>
           </div>
           <div class="w-full px-10 sm:px-20 ">
             <div class="text-green font-medium">{slide.name}</div>

@@ -4,15 +4,15 @@ import { Image } from "astro:assets";
 const navLinks = [
   {
     name: "O mnie",
-    href: "#about",
+    href: "#home",
   },
   {
     name: "Usługi",
     href: "#services",
   },
   {
-    name: "Przypadłości",
-    href: "#cases",
+    name: "Procedura",
+    href: "#procedure",
   },
   {
     name: "Opinie",
@@ -25,7 +25,6 @@ const navLinks = [
 ];
 
 import bars from "../../assets/bars.svg";
-import brand from "../../assets/olga_koss_logo.svg";
 ---
 
 <div
@@ -40,7 +39,6 @@ import brand from "../../assets/olga_koss_logo.svg";
     <!-- Brand -->
     <div class="pl-4 xl:flex-none">
       <a href="#home">
-        <!-- <Image src={brand} alt="Olga Koss Logo" class="w-[219px]" loading="eager" /> -->
         <h3 class="uppercase">Olga Koss</h3>Medycyna naturalna
       </a>
     </div>
@@ -67,7 +65,11 @@ import brand from "../../assets/olga_koss_logo.svg";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Umów wizytę</button>
+        <a
+          href="tel:+48886555984"
+          title="Umów wizytę telefoniczną Olga Koss"
+          class="btn-secondary">Umów wizytę</a
+        >
       </div>
     </div>
 
